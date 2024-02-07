@@ -2,6 +2,7 @@
 {
     public class AddCharacterDto
     {
+
         public string Name { get; set; } = "Karlach";
         public int HitPoints { get; set; } = 100;
         public int Strenght { get; set; } = 10;
