@@ -36,7 +36,7 @@ namespace dotnet_rpg.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult<ServiceResponse<List<GetCharacterDto>>>> EditCharacter (Character character)
+        public async Task<ActionResult<ServiceResponse<List<GetCharacterDto>>>> EditCharacter (UpdateCharacterDto character)
         {
             var response = await _characterService.UpdateCharacter(character);
             if(response.Data is null)
